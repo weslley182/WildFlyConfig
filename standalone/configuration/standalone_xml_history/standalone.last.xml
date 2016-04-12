@@ -144,8 +144,8 @@
                     </security>
                 </datasource>
                 <datasource jndi-name="java:/livrariaDS" pool-name="livrariaDS" enabled="true" use-java-context="true">
-                    <connection-url>jdbc:mysql://localhost:3306/livraria</connection-url>
-                    <driver>com.mysql</driver>
+                    <connection-url>jdbc:mariadb://localhost:3306/livraria</connection-url>
+                    <driver>com.mariadb</driver>
                     <pool>
                         <min-pool-size>10</min-pool-size>
                         <max-pool-size>100</max-pool-size>
@@ -161,6 +161,9 @@
                     </driver>
                     <driver name="com.mysql" module="com.mysql">
                         <xa-datasource-class>com.mysql.jdbc.jdbc2.optional.MysqlXADataSource</xa-datasource-class>
+                    </driver>
+                    <driver name="com.mariadb" module="com.mariadb">
+                        <xa-datasource-class>com.mariaDB.jdbc.jdbc2.optional.MysqlXADataSource</xa-datasource-class>
                     </driver>
                 </drivers>
             </datasources>
@@ -420,4 +423,5 @@
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
     </socket-binding-group>
+
 </server>

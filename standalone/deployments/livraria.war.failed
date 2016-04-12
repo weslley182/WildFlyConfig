@@ -1,9 +1,0 @@
-"{
-    \"WFLYCTL0080: Failed services\" => {\"jboss.deployment.unit.\\\"livraria.war\\\".INSTALL\" => \"org.jboss.msc.service.StartException in service jboss.deployment.unit.\\\"livraria.war\\\".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment \\\"livraria.war\\\"
-    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0041: Component class br.com.caelum.livraria.dao.AutorDao for component AutorDao has errors: 
-WFLYJPA0033: Can't find a persistence unit named null in deployment \\\"livraria.war\\\"\"},
-    \"WFLYCTL0180: Services with missing/unavailable dependencies\" => [
-        \"jboss.deployment.unit.\\\"livraria.war\\\".batch.environment is missing [jboss.deployment.unit.\\\"livraria.war\\\".beanmanager]\",
-        \"jboss.deployment.unit.\\\"livraria.war\\\".weld.weldClassIntrospector is missing [jboss.deployment.unit.\\\"livraria.war\\\".beanmanager]\"
-    ]
-}"
